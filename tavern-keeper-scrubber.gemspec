@@ -5,7 +5,7 @@ require 'tavern-keeper/scrubber/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tavern-keeper-scrubber"
-  spec.version       = Tavern::Keeper::Scrubber::VERSION
+  spec.version       = TavernKeeper::Scrubber::VERSION
   spec.authors       = ["Bill Centinaro"]
   spec.email         = ["bill@theresnobox.net"]
   spec.summary       = %q{Content Scrubber for Tavern Keeper}
