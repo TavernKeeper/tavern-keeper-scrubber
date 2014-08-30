@@ -1,4 +1,5 @@
 require "tavern-keeper/scrubber/version"
+require "loofah"
 
 module TavernKeeper
   module Scrubber
