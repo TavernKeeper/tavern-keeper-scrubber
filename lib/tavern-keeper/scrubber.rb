@@ -1,4 +1,5 @@
 require "tavern-keeper/scrubber/version"
+require "tavern-keeper/scrubber/standard_strip"
 require "loofah"
 
 module TavernKeeper
@@ -17,7 +18,8 @@ module TavernKeeper
   	end
 
   	def self.scrub_string(value)
-  		Loofah.fragment(value).scrub!(StandardStrip).to_s
+      @standard ||= TavernKeeper::Scrubbers::StandardStrip.new
+  		Loofah.fragment(value).scrub!(@standard).to_s
   	end
 
   	def self.scrub_hash(hash)
